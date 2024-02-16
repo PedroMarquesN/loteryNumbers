@@ -1,0 +1,42 @@
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        transform-origin: center;
+    }
+    50% {
+        transform: translateX(0);
+        transform-origin: center;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        transform-origin: center;
+    }
+    50% {
+        transform: scale(1.2);
+        transform-origin: center;
+    }
+}
+
+.slide-animation {
+    animation: slideIn 2s forwards;
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+.contador-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    margin-left: 25px;
+    box-shadow: 10px 7px 20px orange;
+}
